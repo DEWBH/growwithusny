@@ -1,2 +1,2 @@
-# growithusny
-growithusny website
+# growwithusny
+growwithusny website
