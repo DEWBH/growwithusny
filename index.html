@@ -1,18 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Grow With Us NY</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grow With Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
   <style>
-    body { font-family: sans-serif; text-align: center; padding: 5em; background: #f5f5f5; }
-    h1 { font-size: 2.5em; }
-    p { font-size: 1.2em; }
+    body {
+      margin: 0;
+      font-family: 'Patrick Hand', cursive;
+      background-color: #ffffff;
+      color: #000;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em 2em;
+      background: #fff;
+      border-bottom: 1px solid #ccc;
+    }
+    nav a {
+      margin: 0 1em;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://via.placeholder.com/1600x900') no-repeat center center/cover;
+      text-align: center;
+      padding: 8em 2em;
+      color: white;
+      position: relative;
+    }
+    .hero h1 {
+      font-size: 3em;
+    }
+    .hero p {
+      font-size: 1.4em;
+    }
+    .hero .cta {
+      margin-top: 1em;
+      background: #7ac142;
+      color: white;
+      padding: 0.8em 1.5em;
+      font-size: 1.2em;
+      border: none;
+      cursor: pointer;
+    }
+    .section {
+      padding: 4em 2em;
+    }
+    .green-section {
+      background: #7ac142;
+      color: white;
+    }
+    .faq {
+      background: #f7f7f7;
+      padding: 2em;
+    }
+    .faq h2, .contact h2 {
+      text-align: center;
+      font-size: 2em;
+    }
+    .features {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      padding: 3em 2em;
+      background: #7ac142;
+      color: white;
+    }
+    .features div {
+      max-width: 250px;
+    }
+    .contact-form {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin: 0.5em 0;
+    }
+    .form-left, .form-right {
+      flex: 1 1 45%;
+      padding: 1em;
+    }
+    footer {
+      text-align: center;
+      background: #7ac142;
+      padding: 2em;
+      color: white;
+    }
   </style>
 </head>
 <body>
-  <h1>Grow With Us NY</h1>
-  <p>We're launching something amazing. Stay tuned!</p>
-  <p>Contact us: <a href="mailto:info@growithusny.com">info@growithusny.com</a></p>
+  <header>
+    <img src="https://via.placeholder.com/120x60" alt="Grow With Us Logo">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Contact</a>
+      <a href="#">About Us</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <p>718-550-5951</p>
+    <h1>Let's Learn!</h1>
+    <p>Let our passionate NYS Certified Teachers help your child reach their goals!</p>
+    <button class="cta">Contact Us</button>
+  </div>
+
+  <div class="section green-section">
+    <div style="display: flex; align-items: center;">
+      <img src="https://via.placeholder.com/300x200" alt="About Image" style="margin-right: 2em;">
+      <div>
+        <h2>ABOUT US</h2>
+        <p>
+          Grow With Us LLC is a home and at-school tutoring and homework help service.
+          We provide <strong>NYS Certified Teachers</strong> for children in Kindergarten through High School that need extra help.
+          We provide SETSS services, Regents, and State Test help. School projects, papers, finals – we'll help!
+        </p>
+        <button class="cta">Find out more</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <details>
+      <summary>Are your tutors licensed professionals we can trust?</summary>
+      <p>Yes! All our tutors are NYS Certified and background-checked professionals.</p>
+    </details>
+    <details>
+      <summary>I know you help with state tests. What about regular after-school projects?</summary>
+      <p>Absolutely! We assist with all schoolwork including assignments, projects, and finals.</p>
+    </details>
+    <details>
+      <summary>My family lives outside Brooklyn. Do you still provide services?</summary>
+      <p>Yes, we serve families across multiple boroughs. Contact us to check availability.</p>
+    </details>
+  </div>
+
+  <div class="features">
+    <div>
+      <img src="https://via.placeholder.com/100" alt="Option">
+      <h3>At Home Options</h3>
+      <p>After school tutoring and learning at your convenience.</p>
+    </div>
+    <div>
+      <img src="https://via.placeholder.com/100" alt="Help">
+      <h3>Personalized Help</h3>
+      <p>One-on-one help tailored to your child’s specific subject needs.</p>
+    </div>
+    <div>
+      <img src="https://via.placeholder.com/100" alt="Grade Range">
+      <h3>Kindergarten – HS</h3>
+      <p>Support across the full educational range from K to 12.</p>
+    </div>
+  </div>
+
+  <div class="section contact">
+    <h2>Want to get started? Contact Us!</h2>
+    <div class="contact-form">
+      <div class="form-left">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email*">
+        <input type="text" placeholder="Contact Number*">
+        <input type="text" placeholder="Borough of Residence*">
+        <textarea rows="4" placeholder="Tell us about your education goals for your child."></textarea>
+        <button class="cta">Send</button>
+      </div>
+      <div class="form-right">
+        <p><strong>Grow With Us LLC</strong></p>
+        <p>1850 Utica Avenue, Brooklyn, NY 11234</p>
+        <p>718-550-5951</p>
+        <p><strong>Hours:</strong></p>
+        <p>Mon–Fri: 2:30pm – 8pm<br>Sat & Sun: By appointment</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Copyright &copy; 2025 Grow With Us LLC - All Rights Reserved.</p>
+    <p>Powered by GitHub Pages</p>
+  </footer>
 </body>
 </html>
 
