@@ -1,2 +1,0 @@
-# growwithusny
-growwithusny website
